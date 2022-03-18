@@ -1,0 +1,180 @@
+body.moa {
+    background-image: url("../img/moa/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sp {
+    display: none;
+}
+
+//main
+.m-con {
+    text-align: center;
+}
+
+.m-con-abu {
+    padding-top: 6vw;
+    height: 4.7vw;
+}
+
+.m-h2 {
+    position: absolute;
+    top: 11.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    z-index: 20;
+    img {
+        width: 17.5vw;
+        display: block;
+    }
+    span {
+        transform: scale(1, 1.05);
+        letter-spacing: .1vw;
+        font-weight: 600;
+    }
+    small {
+        font-size: .8em;
+    }
+}
+
+.m-tc {
+    width: 43vw;
+    z-index: 10;
+}
+
+.m-moa {
+    width: 46vw;
+    height: 25vw;
+}
+
+.m-p {
+    font-size: .9vw;
+    margin-top: .7vw;
+    line-height: 1.5vw;
+    font-weight: 600;
+}
+
+.m-caution {
+    font-size: 0.7vw;
+    margin-left: .5vw;
+    margin-top: .5vw;
+    a {
+        font-size: 0.8vw;
+        text-decoration: underline;
+        color: #A12A5D;
+        font-weight: 600;
+    }
+}
+
+//他ページとクラス名重複
+.m-btn2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.m-bh,
+.m-bl {
+    width: 17.3vw;
+}
+
+//footer
+.f-con2 {
+    position: relative;
+    top: 2vw;
+    width: 100%;
+    z-index: 40;
+    font-size: 0.6vw;
+}
+
+@media (max-width: 950px) {
+    body.moa {
+        background-image: url("../img/moa/bg_sp.png");
+        background-repeat: repeat;
+    }
+    .pc {
+        display: none;
+    }
+    .sp {
+        display: block;
+    }
+    //header
+    .n-h1 img {
+        width: 27vw;
+    }
+    //main
+    .m {
+        display: flex;
+        justify-content: center;
+    }
+    .m-con {
+        width: 82%;
+        margin: 0 auto;
+    }
+    .m-h2 {
+        flex-direction: column;
+        top: 24.5vw;
+        font-size: 6vw;
+        font-weight: 600;
+        line-height: 7vw;
+        img {
+            width: 32.5vw;
+        }
+    }
+    .m-flex1 {
+        display: flex;
+        span {
+            font-size: 4vw;
+        }
+    }
+    .m-tc {
+        width: 55vw;
+        position: absolute;
+        top: 32vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .m-moa {
+        width: 100%;
+        margin-top: 16vw;
+        height: 40vw;
+    }
+    .m-p {
+        font-size: 2.9vw;
+        line-height: 6.5vw;
+        letter-spacing: -0.25vw;
+        text-align: left;
+    }
+    .sup3 {
+        vertical-align: 16%;
+        font-size: 0.1vw;
+    }
+    .m-caution {
+        font-size: 2.8vw;
+        text-align: left;
+        line-height: 5.2vw;
+        letter-spacing: 0.1vw;
+        a {
+            font-size: 2.8vw;
+        }
+    }
+    .m-btn2 {
+        margin-top: 7vw;
+    }
+    .m-bh,
+    .m-bl {
+        width: 40vw;
+    }
+    //footer
+    .f.moa .f-p {
+        color: #666666;
+        top: 4vw;
+        font-size: 2.5vw;
+    }
+}

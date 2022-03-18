@@ -1,0 +1,82 @@
+body.hall {
+    background-image: url("../img/hall/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    .m-screen {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        margin-top: 2.5vw;
+    }
+    .m-con3 {
+        display: flex;
+        width: 100%;
+        z-index: 40;
+        font-size: 0.8vw;
+        padding-top: 1vw;
+        .m-bl {
+            margin-top: .3vw;
+            color: #787776;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .m-pg {
+            position: absolute;
+            right: 13%;
+            margin-top: .3vw;
+            background: white;
+            padding: 1vw 5vw;
+            border-radius: 0.6vw;
+            border: 2px solid #989898;
+        }
+    }
+}
+
+//footer
+.f.hall {
+    .f-con {
+        top: 6vw;
+        .f-p {
+            font-size: 1vw;
+            color: white;
+        }
+    }
+}
+
+@media all and (max-width:950px) {
+    body.hall {
+        background-image: url("../img/hall/bg_sp.png");
+        background-repeat: repeat;
+    }
+    .m {
+        display: block;
+        .m-screen {
+            margin-top: 35.5vw;
+            width: 85%;
+        }
+        .m-con3 .m-bl {
+            margin-top: 48vw;
+            width: 55vw;
+        }
+        .m-con3 .m-pg {
+            right: 50%;
+            transform: translateX(50%);
+            margin-top: 5vw;
+            width: 50%;
+            height: 7vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                font-size: 4vw;
+            }
+        }
+    }
+    .f.hall .f-con {
+        top: 60vw;
+    }
+}
